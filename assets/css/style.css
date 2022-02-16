@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -14,6 +14,7 @@ body {
 
 .container {
     width: 100%;
+    overflow: hidden;
 }
 
 h1 {
@@ -32,13 +33,55 @@ h4 {
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 80px;
+    overflow: hidden;
 }
 
-.icone {
+.icone1 {
     text-align: center;
-    animation-duration: 2s;
-    animation-name: glissement;
-    animation-iteration-count: 1;
+    position: relative;
+    animation: verslehaut1 1.7s 1;
+}
+
+.icone2 {
+    text-align: center;
+    position: relative;
+    animation: verslehaut2 1.7s 1;
+}
+
+.icone3 {
+    text-align: center;
+    position: relative;
+    animation: verslehaut3 1.7s 1;
+}
+
+@keyframes verslehaut1 {
+    0% {
+        top: 100px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes verslehaut2 {
+    0% {
+        top: 150px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes verslehaut3 {
+    0% {
+        top: 200px;
+    }
+
+    100% {
+        top: 0px;
+    }
 }
 
 .description1 {
@@ -46,6 +89,7 @@ h4 {
     width: 100%;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 
 .discours1 {
@@ -53,9 +97,22 @@ h4 {
     width: 40%;
     margin-left: 50px;
     padding-top: 50px;
+    position: relative;
+    animation: versladroite 1.7s 1;
 }
 
-.bouton {
+@keyframes versladroite {
+    0% {
+        left: -300px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+
+.bouton{
     border-radius: 25px;
     color: white;
     font-size: 18px;
@@ -66,6 +123,48 @@ h4 {
     text-decoration: none;
     font-weight: 700;
     text-align: left;
+}
+
+
+/* .discours1 a:hover{
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    background: #192440;
+    height: 60px;
+    width: 150px;
+    padding: 10px 12px 10px 12px;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 500px; 
+     top: -5px;
+    position: relative;
+     animation: bouton1 0.8s infinite; 
+     transform: translateY(-8px);
+     transition-duration: 0.5s;
+    background: yellow;
+} */
+
+.tourbouton{
+    transform: translateY(0px);
+    transition-duration: 0.5s;
+}
+
+.tourbouton:hover{
+    transform: translateY(-8px);
+    transition-duration: 0.5s;
+}
+
+
+@keyframes bouton1 {
+    0% {
+        top: -5px;
+    }
+
+    100% {
+        top: -5px;
+    }
 }
 
 
@@ -86,6 +185,8 @@ h4 {
     max-width: 480px;
     height: auto;
     margin-left: 80px;
+    position: relative;
+    animation: verslagauche 1.7s 1;
 }
 
 
@@ -94,21 +195,35 @@ h4 {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding-top:80px;
+    padding-top: 80px;
 }
 
-.imagegauche{
+.imagegauche {
     width: 100%;
     max-width: 480px;
     height: auto;
     margin-left: 100px;
     padding: 0;
+    position: relative;
+    animation: versladroite 1.7s 1;
 }
 
-.discours2{
+.discours2 {
     width: 100%;
     margin-left: 80px;
     padding-top: 25px;
+    position: relative;
+    animation: verslagauche 1.7s 1;
+}
+
+@keyframes verslagauche {
+    0% {
+        right: -300px;
+    }
+
+    100% {
+        right: 0px;
+    }
 }
 
 .discours2 p {
@@ -123,15 +238,281 @@ h4 {
 }
 
 
+/* contact */
 
-@keyframes glissement {
-    from {
-      margin-top: 20%;
-      width: 0%;
+
+.contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: no-repeat center/100% url(../img/contact-bk.jpg);
+}
+
+.contactgauche {
+    width: 30%;
+    color: white;
+    margin: 50px 0px 100px 80px;
+}
+
+.contactdroite {
+    width: auto;
+    color: #00e69c;
+    position: relative;
+    margin: 50px 50px 100px 0px;
+}
+
+.namemail {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+.name {
+    margin-right: 50px;
+
+}
+
+.mail {
+    /* width: 40%; */
+}
+
+.message {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+
+}
+
+input {
+    border-color: #00e69c;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    width: 250px;
+    color:white;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+textarea {
+    border-color: #00e69c;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    color:white;
+    width: 97%;
+    min-height: 100px;
+    max-width: 580px;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+
+.boutonsubmit{
+    border:0px;
+    border-radius: 25px;
+    color: black;
+    font-size: 18px;
+    background: #00e69c;
+    height: 40px;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin-top:25px;
+    transform: translateY(0px);
+    transition-duration: 0.5s;
+}
+
+/* .boutonsubmit:hover{
+    color: white;
+    position: relative;
+    top : -5px;
+} */
+
+ 
+ .boutonsubmit:hover{    
+    transform: translateY(-8px);
+    transition-duration: 0.5s;
+}
+ 
+.contact h1 {
+    color: white;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+@media all and (max-width: 767px) {
+
+    .ensembleicone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+        overflow: hidden;
     }
-  
-    to {
-      margin-bottom: 0%;
-      width: 100%;
+
+    .description1 {
+        background: linear-gradient(170deg, white 50%, #00ffad 50%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
     }
-  }
+
+    .discours1 {
+        /*c'est le premier blabla à gauche*/
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding-left: auto;
+        padding-right: auto;
+        padding-top: 50px;
+        position: relative;
+        animation: versladroite 1.7s 1;
+        text-align: center;
+    }
+
+    .description2 {
+        background: #00ffad;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    .discours2 {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        padding-top: 25px;
+        position: relative;
+        animation: verslagauche 1.7s 1;
+    }
+
+    .discours2 h1 {
+        color: #292b2c;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .discours1 h1 {
+        color: #292b2c;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+
+    .imagedroite img {
+        /*image ordi milieu de page*/
+        /*l'image de l'ordi à droite*/
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        position: relative;
+        animation: verslagauche 1.7s 1;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .imagegauche {
+        /*image tablette bas de page*/
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        position: relative;
+        animation: versladroite 1.7s 1;
+    }
+
+    .contact {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background: url(../img/contact-bk.jpg);
+    }
+
+    /* .namemail {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+    } */
+
+    .contactgauche {
+        width: 100%;
+        color: white;
+        margin: 50px 0px 10px 80px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .contactgauche p {
+        width: 50%;
+        padding : 10px;
+    }
+    
+    .contactdroite {
+        width: 100%;
+        color: #00e69c;
+        position: relative;
+        margin: 50px auto 100px auto;
+    }
+
+    .namemail {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .name {
+        width: 95%;
+
+}
+
+.mail {
+    width: 95%;
+}
+
+    .message {
+        width: 60%;
+        text-align: left;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+
+    input {
+        border-color: #00e69c;
+        background: rgba(0, 0, 0, 0);
+        border-radius: 5px;
+        width: 100%;
+        color:white;
+        padding: 10px;
+        font-size: 18px;
+        margin-top: 8px;
+    
+    }
+
+
+
+}
