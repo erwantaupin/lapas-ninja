@@ -7,7 +7,7 @@ body {font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,
     font-weight: 400;
     line-height: 1.5;
     color: #292b2c;
-    background-color: #fff;
+   /* background-color: #fff;*/
 }
 
 .container {
@@ -33,11 +33,16 @@ header img {
     width: 80px;
     margin-left: 400px;
 }
- a {
+ .text-right a {
      text-decoration: none;
      color: #fff;
      font-size: 20px;
      margin-left:80px;
+ }
+
+ .text-right a:hover {
+     text-decoration: underline;
+     cursor: pointer;
  }
 
  .container h1 {
@@ -75,4 +80,49 @@ button {
 }
 button:hover {
     color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background: #192440;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container1 {
+    height: 40px;
+    width: 100%;
+}
+
+.text-left p {
+    position: absolute;
+    z-index: 30;
+     height: 40px;
+     width: 100%;
+     color:#fff;
+     top: 40px;
+     left: 400px;
+     font-size:16px;
+ }
+ 
+.res-soc {
+    color: #fff;
+    height: 40px;
+    width: 50%;
+    font-size: 30px;
+}
+
+@media screen and (max-width:768px)  
+{
+    header {
+       width:auto;
+    }
+
+    header img {
+        margin-left:none;
+    }
+
 }
