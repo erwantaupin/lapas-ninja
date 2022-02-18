@@ -54,6 +54,11 @@ h4 {
     animation: verslehaut3 1.7s 1;
 }
 
+.ensembleicone p {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 @keyframes verslehaut1 {
     0% {
         top: 100px;
