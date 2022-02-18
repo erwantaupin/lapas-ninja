@@ -57,30 +57,48 @@ h4 {
 @keyframes verslehaut1 {
     0% {
         top: 100px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.9;
     }
 
     100% {
         top: 0px;
+        opacity: 1;
     }
 }
 
 @keyframes verslehaut2 {
     0% {
         top: 150px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.9;
     }
 
     100% {
         top: 0px;
+        opacity: 1;
     }
 }
 
 @keyframes verslehaut3 {
     0% {
         top: 200px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.9;
     }
 
     100% {
         top: 0px;
+        opacity: 1;
     }
 }
 
@@ -104,10 +122,16 @@ h4 {
 @keyframes versladroite {
     0% {
         left: -300px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.9;
     }
 
     100% {
         left: 0px;
+        opacity: 1;
     }
 }
 
