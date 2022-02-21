@@ -47,14 +47,13 @@ header img {
 }
 
 .container h1 {
-  width: 100%;
   color: #fff;
   font-size: 72px;
   position: absolute;
   z-index: 11;
   top: 190px;
   line-height: 1em;
-  left: -275px;
+  left: 75px;
 }
 .container p,
 .container1 p {
@@ -85,6 +84,7 @@ button:hover {
 }
 
 footer {
+  position: relative;
   background: #192440;
   height: 120px;
   width: 100%;
@@ -127,10 +127,11 @@ li {
   font-weight: 400;
 }
 
-h1 {
+.containero h1 {
   color: #292b2c;
   text-align: center;
   font-weight: 700;
+  margin-top: 30px;
 }
 h2 {
   font-size: 44.8px;
@@ -430,6 +431,7 @@ span {
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   overflow: hidden;
 }
 
@@ -504,7 +506,6 @@ span {
 
 .imagedroite {
   /*l'image de l'ordi à droite*/
-  width: 45%;
   margin-bottom: 80px;
   margin-right: 100px;
 }
@@ -524,7 +525,9 @@ span {
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .imagegauche {
@@ -538,7 +541,7 @@ span {
 }
 
 .discours2 {
-  width: 100%;
+  width: 25%;
   margin-left: 80px;
   padding-top: 25px;
   position: relative;
@@ -575,6 +578,7 @@ span {
   flex-direction: row;
   justify-content: space-around;
   background: url(../img/contacttla.jpg) no-repeat;
+  background-size: cover;
 }
 
 .contactgauche {
@@ -676,7 +680,7 @@ textarea {
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    padding-left: 15%;
+    padding-left: 3%;
     /*on change ici pour le media querie*/
   }
 
@@ -732,7 +736,6 @@ textarea {
 
   .imagedroite {
     /*l'image de l'ordi à droite*/
-    width: 100%;
     margin-bottom: 80px;
   }
 
@@ -760,10 +763,10 @@ textarea {
 
   .contact {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .contactgauche {
@@ -912,7 +915,6 @@ textarea {
 
   .imagedroite {
     /*l'image de l'ordi à droite*/
-    width: 80%;
     margin-bottom: -40px;
   }
 
@@ -940,10 +942,10 @@ textarea {
 
   .contact {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .contactgauche {
@@ -1095,7 +1097,6 @@ textarea {
 
   .imagedroite {
     /*l'image de l'ordi à droite*/
-    width: 50%;
     margin-bottom: 80px;
     margin-left: -50px;
   }
@@ -1127,6 +1128,7 @@ textarea {
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .contactgauche {
@@ -1265,7 +1267,7 @@ textarea {
     text-align: center;
   }
 
-  p {
+  /* p {
     color: #fff;
     width: 80%;
     font-size: 16px;
@@ -1274,7 +1276,7 @@ textarea {
     top: 400px;
     left: 60;
     text-align: center;
-  }
+  } */
 
   .text-left p {
     position: absolute;
@@ -1385,9 +1387,8 @@ textarea {
 
   .imagedroite {
     /*l'image de l'ordi à droite*/
-    width: 50%;
     margin-bottom: 80px;
-    margin-left: -50px;
+    margin-left: -130px;
   }
 
   .imagedroite img {
@@ -1418,6 +1419,7 @@ textarea {
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .contactgauche {
